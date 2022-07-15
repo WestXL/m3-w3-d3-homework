@@ -1,0 +1,66 @@
+/* Nest Nav */
+nav {
+  font-family: Arial, Helvetica, Sans-Serif;
+  margin: 1em 0 2em 2em; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    nav ul li {
+      font-size: large;
+      display: inline;
+      color: white; }
+      nav ul li a {
+        font-size: large;
+        padding: 6px;
+        color: white;
+        text-decoration: none; }
+
+/* Variables */
+* {
+  font-size: 1.2rem; }
+
+body {
+  background-color: #daaa0e;
+  /* Nest Main */ }
+  body main {
+    background-color: white;
+    width: 1350px;
+    min-height: 535px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1em; }
+    body main #intro-text {
+      padding-top: 120px;
+      background-color: #d4d5d8;
+      position: relative;
+      text-align: center; }
+      body main #intro-text span {
+        margin-top: 200px;
+        font-size: 30px;
+        font-family: "Sacramento", cursive; }
+      body main #intro-text h3 {
+        font-family: Arial, Helvetica, Sans-Serif;
+        font-size: 30px; }
+      body main #intro-text p {
+        margin: 0 2em 0 2em;
+        font-family: Arial, Helvetica, Sans-Serif;
+        font-size: medium; }
+      body main #intro-text button {
+        margin-top: 2em;
+        font-size: 15px;
+        color: white;
+        height: 3em;
+        background-color: #daaa0e;
+        border: 0;
+        padding: 0 1em 0 1em; }
+    body main #intro-image {
+      background-image: url("/images/louisiana-barbecued-shrimp.webp");
+      background-size: cover;
+      position: relative;
+      width: 70%; }
+  body footer {
+    margin: 2em 0 0 4em;
+    font-size: medium;
+    font-family: Arial, Helvetica, Sans-Serif; }

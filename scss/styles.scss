@@ -1,0 +1,81 @@
+@import "nav.scss";
+@import "colors.scss";
+
+@mixin main-style {
+    background-color: white;
+    width: 1350px;
+    min-height: 535px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* Variables */
+$font-cursive:'Sacramento',
+cursive;
+$font-normal:Arial,
+Helvetica,
+Sans-Serif;
+
+* {
+    font-size: 1.2rem;
+}
+
+body {
+    background-color: $color-back;
+
+    /* Nest Main */
+    main {
+        @include main-style;
+
+        #intro-text {
+            padding-top: 120px;
+            background-color: $color-leftback;
+            position: relative;
+            text-align: center;
+
+            span {
+                margin-top: 200px;
+                font-size: 30px;
+                font-family: $font-cursive;
+            }
+
+            h3 {
+                font-family: $font-normal;
+                font-size: 30px;
+            }
+
+            p {
+                margin: 0 2em 0 2em;
+                font-family: $font-normal;
+                font-size: medium;
+            }
+
+            button {
+                margin-top: 2em;
+                font-size: 15px;
+                color: $color-white;
+                height: 3em;
+                background-color: $color-back;
+                border: 0;
+                padding: 0 1em 0 1em;
+            }
+        }
+
+        #intro-image {
+            background-image: url("/images/louisiana-barbecued-shrimp.webp");
+            background-size: cover;
+            position: relative;
+            width: 70%;
+        }
+    }
+
+    footer {
+        margin: 2em 0 0 4em;
+        font-size: medium;
+        font-family: $font-normal;
+    }
+}
+
+// Mixin or Extend for button

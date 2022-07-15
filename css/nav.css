@@ -1,0 +1,17 @@
+/* Nest Nav */
+nav {
+  font-family: Arial, Helvetica, Sans-Serif;
+  margin: 1em 0 2em 2em; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    nav ul li {
+      font-size: large;
+      display: inline;
+      color: white; }
+      nav ul li a {
+        font-size: large;
+        padding: 6px;
+        color: white;
+        text-decoration: none; }
